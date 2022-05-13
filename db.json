@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "email": "jessica@email.com",
+      "password": "batatafrita123",
+      "nome": "jessica",
+      "id": 1
+    },
+    {
+      "email": "caique@mail.com",
+      "password": "$2a$10$zxohv0fEv3hyLTFP/ItQkOvmbSIOl8kJ1.THXGJbUJbZHuRpvuAey",
+      "nome": "Caique",
+      "id": 2
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "imagem": "assets/img/kraken",
+      "titulo": "produto diferente",
+      "preco": "R$: 999,99"
+    },
+    {
+      "id": 2,
+      "imagem": "assets/img/oculus",
+      "titulo": "produto diferente",
+      "preco": "R$: 999,99"
+    },
+    {
+      "id": 3,
+      "imagem": "assets/img/play 5",
+      "titulo": "produto diferente",
+      "preco": "R$: 999,99"
+    },
+    {
+      "id": 4,
+      "imagem": "assets/img/XboxS",
+      "titulo": "produto diferente",
+      "preco": "R$: 999,99"
+    },
+    {
+      "id": 5,
+      "imagem": "assets/img/XboxX",
+      "titulo": "produto diferente",
+      "preco": "R$: 999,99"
+    },
+    {
+      "id": 6,
+      "imagem": "assets/img/ps5",
+      "titulo": "produto diferente",
+      "preco": "R$: 999,99"
+    },
+    {
+      "imagen": "assets/img/fifa 2022",
+      "titulo": "produto diferenciado",
+      "preco": "R$: 499,99",
+      "id": 7
+    }
+  ]
+}

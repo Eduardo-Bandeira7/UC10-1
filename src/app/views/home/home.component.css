@@ -1,0 +1,287 @@
+
+
+:root{
+    font-size: 16px;
+    /* --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms; */
+}
+
+body{
+    color: #000;
+    background-color: #141418;
+    margin: 0;
+    padding: 0;
+}
+
+/*configuração do scroolbar*/
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #6649b8;
+}
+
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    color: #b6b6b6;
+}
+
+/*barra de navegação*/
+.navbar{
+    position: fixed;
+    background-color:#23232e;
+    transition: width 200ms ease-in-out;
+}
+
+.navbar-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item{
+    width: 100%;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #b6b6b6;
+    text-decoration: none;
+}
+.nav-link:hover, .icon:hover{
+    color: #6649b8;
+    transition: 200ms;
+    background: #141418;
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link ion-icon{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #ececec;
+    background: #141418;
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+/*rotação do logo*/
+.logo ion-icon{
+    transform: rotate(0deg);
+    transition: 500ms;
+}
+
+.navbar:hover .logo ion-icon{
+    transform: rotate(-180deg);
+}
+
+.banner img{
+    width: 100%;
+    height: 500px;
+}
+
+/*Cards dos produtos*/
+
+.produtos{
+    /* margin: 1rem; */
+    padding: 1rem;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prod-bg{
+    height: 250px;
+    width: 200px;
+    background-color:#6649b8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.prod-img{
+    height: 150px;
+    width: 90%;
+    background-color: #ececec;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.prod-img img{
+    height: 150px;
+    width: 100%;
+}
+
+.btn{
+    width: 120px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color:#23232e;
+    color: #b6b6b6;
+    cursor: pointer;
+
+}
+
+h5{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    color: #ececec;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    padding: 0;
+    margin:0 0 10px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    background-color: #1d1535;
+
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.footer-links{
+    font-size: 20px;
+    color: #ececec;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-link a, .social-link a{
+    color: #b6b6b6;
+    text-decoration: none;
+}
+
+.newsletter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email{
+    height: 25px;
+    width: 400px;
+}
+
+.btn-footer{
+    width: 90px;
+    height: 30px;
+    background-color: #6649b8;
+    border: none;
+    color: #ececec;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.bandeiras{
+    width: 100%;
+    height: 100px;
+}
+
+.bandeiras img{
+    width: 200px;
+    height: 100px;
+}
+
+
+/* telas menores */
+@media only screen and (max-width: 600px) {
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    main{
+        margin: 0;
+    }
+}
+
+/* telas maiores */
+@media only screen and (min-width: 600px) {
+    .navbar{
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+    }
+    
+.navbar:hover{
+    width: 16rem;
+}
+
+
+.navbar:hover .link-text{
+    display: inline;
+    transition: opacity 500ms;
+
+}
+
+}

@@ -1,0 +1,229 @@
+<body>
+
+
+    <nav class="navbar">
+        <!--barra de navagação-->
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="#" class="nav-link">
+                    <span class="link-text">SKY HEAVEN</span>
+                    <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../login/login.component.html"  class="nav-link">
+                    <ion-icon class="icon" name="log-in-outline"></ion-icon>
+                    <span class="link-text">Login</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <ion-icon class="icon" name="game-controller-outline"></ion-icon>
+                    <span class="link-text">Consoles</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <ion-icon class="icon" name="tv-outline"></ion-icon>
+                    <span class="link-text">PC</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <ion-icon class="icon" name="shirt-outline"></ion-icon>
+                    <span class="link-text">Vestuário</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <ion-icon class="icon" name="headset-outline"></ion-icon>
+                    <span class="link-text">Acessórios</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <ion-icon class="icon" name="exit-outline"></ion-icon>
+                    <span class="link-text">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="banner">
+            <img src="../../../assets/img/Banner-cyber-xbox.jpg" alt="Banner Cyberpunk xbox edition">
+        </div>
+
+        <hr>
+        <h3>Produtos</h3>
+        <section *ngFor="let produtos of listaProdutos" class="produtos">
+
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img [src]=produtos.imagem alt="Controle nintendo switch">
+                </div>
+                <div class="prod-name">
+                    <h5>{{produtos.titulo}}</h5>
+                    <p>{{produtos.preco}}</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/controle switch fort.png" alt="Controle nintendo switch">
+                </div>
+                <div class="prod-name">
+                    <h5>Controle Switch</h5>
+                    <p>R$: 200,00</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/controle ps5.png" alt="Controle ps5">
+                </div>
+                <div class="prod-name">
+                    <h5>Controle PS5</h5>
+                    <p>R$: 250,00</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/controle series verm.png" alt="Contorle Xbox vermelho">
+                </div>
+                <div class="prod-name">
+                    <h5>Controle Xbox</h5>
+                    <p>R$: 250,00</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/fifa 2022.png" alt="FIFA 2022">
+                </div>
+                <div class="prod-name">
+                    <h5>FIFA 2022</h5>
+                    <p>R$: 99,90</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/pc gamer 1.png" alt="PC gamer AMD">
+                </div>
+                <div class="prod-name">
+                    <h5>PC AMD Ryzen</h5>
+                    <p>R$: 5999,90</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/pc gamer 2.png" alt="PC gamer intel">
+                </div>
+                <div class="prod-name">
+                    <h5>PC Intel I7</h5>
+                    <p>R$: 7999,90</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/oculus.png" alt="Oculus rift">
+                </div>
+                <div class="prod-name">
+                    <h5>Oculus Rift</h5>
+                    <p>R$: 4899,90</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/kraken.png" alt="Razer Kraken">
+                </div>
+                <div class="prod-name">
+                    <h5>Razer Kraken</h5>
+                    <p>R$: 189,90</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/play 5.jpg" alt="playstation 5">
+                </div>
+                <div class="prod-name">
+                    <h5>Playstation 5</h5>
+                    <p>R$: 5499,90</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+            <div class="prod-bg">
+                <div class="prod-img">
+                    <img src="../../../assets/img/xboxX.png" alt="Xbox series X">
+                </div>
+                <div class="prod-name">
+                    <h5>Xbox Series X</h5>
+                    <p>R$: 6599,90</p>
+                    <input class="btn" type="button" value="Comprar">
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <footer>
+            <div class="footer-links">
+                <div class="about-us">
+                    <h4>Sobre nós:</h4>
+                    <ul class="about-us-bg">
+                        <li class="about-link">
+                            <a href="#">Nossa História</a>
+                        </li>
+                        <li class="about-link">
+                            <a href="#">Termos de uso</a>
+                        </li>
+                        <li class="about-link">
+                            <a href="#">Polpitica de Privacidade</a>
+                        </li>
+                        <li class="about-link">
+                            <a href="#">Reclamações e Devoluções</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Socias</h4>
+                    <ul class="Social-bg">
+                        <li class="social-link">
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li class="social-link">
+                            <a href="#">You Tube</a>
+                        </li>
+                        <li class="social-link">
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li class="social-link">
+                            <a href="#">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <h2>Assine a newsletter e ganhe varios cupons!</h2>
+                <input type="email" name="email" id="email" placeholder="Digite aqui..." required>
+                <input onclick="sendEmail()" class="btn-footer" type="button" value="Assine">
+            </div>
+
+            <div class="bandeiras">
+                <img src="../../../assets/img/norton.png" alt="Segurança norton">
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>

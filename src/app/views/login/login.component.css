@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.login_header{
+    height: 100px;
+    background-color: black;
+}
+
+span{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.login_header-icone img{
+    height: 100px;
+    margin-left: 15px;
+} */
+
+.area_login-nome{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.area_login-nome img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.area_login-nome h1{
+    text-decoration: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(136, 136, 136);
+}
+
+.texto{
+    margin-left: 450px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: rgb(106, 106, 106);
+}
+
+.area_login-email-e-senha{
+    margin-left: 450px;
+    margin-top: 10px;
+    width: 400px;
+    height: 35px;
+}
+
+/* .area_login-senha{
+    margin-left: 450px;
+    margin-top: 10px;
+    width: 400px;
+    height: 35px;
+} */
+
+.area_login-formulario button{
+    height: 35px;
+    width: 400px;
+    margin-left: 450px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(253, 255, 209);
+    cursor: pointer;
+}
+
+.esqueceu a{
+    margin-left: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: rgb(106, 106, 106);
+    text-decoration:underline;
+}
+
+.acesso{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: rgb(106, 106, 106);
+}
+
+.acesso a{
+    color: rgb(68, 68, 68);
+    text-decoration:underline;
+}
+
+.politica{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: rgb(106, 106, 106);
+}
+
+.privacidade{
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color: rgb(68, 68, 68);
+}
