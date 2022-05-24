@@ -17,8 +17,25 @@ export class LoginComponent implements OnInit {
 
   loginModel = new User()
   mensagem = ""
+  erroEncontrado = ""
 
   onSubmit(){
+
+    let erroEncontrado = 0;
+
+    const listaPalavras: string[] = ["Select", "from", "drop", "or", "having", "group", "insert", "exec",
+     "\"", "\'", "--", "#", "*", ";"]
+    listaPalavras.forEach(palavra =>{
+      console.log("palavra atual", palavra)
+
+      if(this.loginModel.email.toLowerCase().includes(palavra)){
+        console.log("Palavra encontrada", palavra)
+        this.mensagem = "Dados inválidos" + palavra;
+
+        erroEncontrado = 1;
+      }
+    })
+
     this.loginService.login(this.loginModel).subscribe((Response)=>{
       this.router.navigateByUrl('')
     }, (respostaErro) =>{
